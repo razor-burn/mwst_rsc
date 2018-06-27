@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>rscaddupdate</class>
+ <widget class="QDialog" name="rscaddupdate">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>732</width>
+    <height>519</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QLabel" name="labelActivationDate">
+     <property name="text">
+      <string>Aktivierungsdatum</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="labelEquipmentnumber">
+     <property name="text">
+      <string>Ausstattungsnummer</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="lineEditIVS"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="labelIVS">
+     <property name="text">
+      <string>IVS</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QComboBox" name="comboBoxCostLocation">
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="labelCostLocation">
+     <property name="text">
+      <string>Kostenstelle</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QDateEdit" name="dateEditActiveDate">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="lineEditEquipmentnumber"/>
+   </item>
+   <item row="6" column="2">
+    <widget class="QPushButton" name="buttonAddMake">
+     <property name="text">
+      <string>Neu</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="labelLocation">
+     <property name="text">
+      <string>Ort</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="TreeViewComboBox" name="comboBoxLocation"/>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="labelCategory">
+     <property name="text">
+      <string>Kategorie</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="TreeViewComboBox" name="comboBoxCategory">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="maxVisibleItems">
+      <number>20</number>
+     </property>
+     <property name="modelColumn">
+      <number>0</number>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="labelMake">
+     <property name="text">
+      <string>Hersteller</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QComboBox" name="comboBoxMake">
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="labelType">
+     <property name="text">
+      <string>Typ</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QLineEdit" name="lineEditType"/>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="labelDescription">
+     <property name="text">
+      <string>Beschreibung</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QTextEdit" name="textEditDescription">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>0</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="labelSerialnumber">
+     <property name="text">
+      <string>Seriennummer</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QLineEdit" name="lineEditSerialnumber"/>
+   </item>
+   <item row="10" column="0">
+    <widget class="QLabel" name="labelPurchasePrice">
+     <property name="text">
+      <string>Einkaufspreis</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBoxPurchasePrice"/>
+   </item>
+   <item row="11" column="0">
+    <widget class="QLabel" name="labelTotalQty">
+     <property name="text">
+      <string>Gesamtmenge</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1">
+    <widget class="QSpinBox" name="spinBoxTotalQty"/>
+   </item>
+   <item row="12" column="0">
+    <widget class="QLabel" name="labelQtyInStock">
+     <property name="text">
+      <string>Lagernde Menge</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="1">
+    <widget class="QSpinBox" name="spinBoxQtyInStock">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0">
+    <widget class="QLabel" name="labelMinQty">
+     <property name="text">
+      <string>Minimale Menge</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="1">
+    <widget class="QSpinBox" name="spinBoxMinQty"/>
+   </item>
+   <item row="14" column="1">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="buttonUpdateResource">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Aktualisieren</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonAddResource">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Hinzufügen</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="6" column="3">
+    <widget class="QPushButton" name="buttonDelMake">
+     <property name="text">
+      <string>Löschen</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TreeViewComboBox</class>
+   <extends>QComboBox</extends>
+   <header>treeviewcombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

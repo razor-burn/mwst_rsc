@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1059</width>
+    <height>725</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="MainStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,0,0,0">
+          <property name="spacing">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="labelLoansDueToday">
+            <property name="font">
+             <font>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Ausleihen, die bis heute fällig sind</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableView" name="tableViewLoansDueToday">
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QPushButton" name="buttonEditLoan">
+              <property name="text">
+               <string>Ausgewählte Ausleihe editieren</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelEditingroomsOccupance">
+            <property name="font">
+             <font>
+              <pointsize>18</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Belegung der Schnitträume für heute</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableView" name="tableViewEditingRoomsOccupance">
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QPushButton" name="buttonEditRoomLoan">
+              <property name="text">
+               <string>Ausgewählte Reservierung editieren</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+       <zorder></zorder>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1059</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBenutzer">
+    <property name="title">
+     <string>Benutzer</string>
+    </property>
+    <addaction name="actionBenutzer_verwalten"/>
+   </widget>
+   <widget class="QMenu" name="menuRessourcen">
+    <property name="title">
+     <string>Ressourcen</string>
+    </property>
+    <addaction name="actionRessourcen_verwalten"/>
+   </widget>
+   <widget class="QMenu" name="menuAusleihen">
+    <property name="title">
+     <string>Ausleihen</string>
+    </property>
+    <addaction name="actionNeue_Ausleihe"/>
+    <addaction name="actionAusleihen_verwalten"/>
+   </widget>
+   <widget class="QMenu" name="menuDiverses">
+    <property name="title">
+     <string>Diverses</string>
+    </property>
+    <addaction name="actionOptionen"/>
+   </widget>
+   <widget class="QMenu" name="menuHauptfenster">
+    <property name="title">
+     <string>Hauptfenster</string>
+    </property>
+    <addaction name="actionHauptfenster"/>
+   </widget>
+   <addaction name="menuHauptfenster"/>
+   <addaction name="menuBenutzer"/>
+   <addaction name="menuRessourcen"/>
+   <addaction name="menuAusleihen"/>
+   <addaction name="menuDiverses"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionBenutzer_verwalten">
+   <property name="text">
+    <string>Benutzer verwalten</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+B</string>
+   </property>
+  </action>
+  <action name="actionRessourcen_verwalten">
+   <property name="text">
+    <string>Ressourcen verwalten</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+R</string>
+   </property>
+  </action>
+  <action name="actionNeue_Ausleihe">
+   <property name="text">
+    <string>Neue Ausleihe</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+N</string>
+   </property>
+  </action>
+  <action name="actionAusleihen_verwalten">
+   <property name="text">
+    <string>Ausleihen verwalten</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+A</string>
+   </property>
+  </action>
+  <action name="actionHauptfenster">
+   <property name="text">
+    <string>Hauptfenster</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+H</string>
+   </property>
+  </action>
+  <action name="actionOptionen">
+   <property name="text">
+    <string>Optionen</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+O</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MainStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header>mainstackedwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
